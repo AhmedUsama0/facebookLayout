@@ -16,7 +16,7 @@ const preparePost = () => {
     <div class="post">
         <header class="post__header grid">
         <div class="user__info">
-            <img src="https://cdn.vox-cdn.com/thumbor/6cH0rxEsnwY2ndipRS7IWepUw90=/0x0:3840x2160/1200x800/filters:focal(1613x773:2227x1387)/cdn.vox-cdn.com/uploads/chorus_image/image/66788456/LastofUsPart2.0.jpg" alt="user image">
+            <img src="./assets/persons/mypic.jpeg">
             <span class="user__name">ahmed osama</span>
         </div>
         <div class="post__edit">
@@ -45,7 +45,7 @@ const preparePost = () => {
 };
 const addPost = (post) => {
     const postsContainer = document.querySelector("#posts-container");
-    postsContainer.insertAdjacentHTML("beforebegin", post);
+    postsContainer.insertAdjacentHTML("afterbegin", post);
 };
 const handlePostCreation = (event) => {
     if (event.key === "Enter" && !event.shiftKey) {
@@ -71,6 +71,7 @@ const fetchPosts = () => {
     }));
 };
 const preparePosts = (posts) => {
+    console.log(posts);
     return Promise.all(posts.map(({ content_text, user_id }) => __awaiter(void 0, void 0, void 0, function* () {
         const user = yield getSingleUser(user_id);
         return `<div class="post">
@@ -107,6 +108,7 @@ const preparePosts = (posts) => {
 };
 const cachePosts = (posts) => {
     localStorage.setItem("posts", JSON.stringify(posts));
+    console.log(getCachedPosts());
 };
 const getCachedPosts = () => {
     return JSON.parse(localStorage.getItem("posts"));

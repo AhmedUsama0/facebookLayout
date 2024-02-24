@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "commonjs": "^0.0.1",
     "source-map-loader": "^5.0.0",
     "ts-loader": "^9.5.1"
   }
