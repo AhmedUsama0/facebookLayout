@@ -1,7 +1,7 @@
 @media screen and (max-width: 500px) {
   .facebook__header .left__box {
     grid-column: span 12;
-    /* border: 1px solid blue; */
+    justify-content: center;
   }
   .main__content .story__container .story__box,
   .main__content .story__container .create__story__box {
@@ -11,8 +11,11 @@
     top: 180px !important;
   }
   .facebook__header .right__box {
-    grid-column: auto;
+    grid-column: span 12;
     margin-top: 1rem;
+  }
+  .facebook__header .right__box ul {
+    justify-content: center;
   }
   .facebook__header .facebook__nav .nav__links li {
     font-size: 17px;
