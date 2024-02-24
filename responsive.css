@@ -1,0 +1,95 @@
+@media screen and (max-width: 500px) {
+  .facebook__header .left__box {
+    grid-column: span 12;
+    /* border: 1px solid blue; */
+  }
+  .main__content .story__container .story__box,
+  .main__content .story__container .create__story__box {
+    flex-basis: 50%;
+  }
+  .facebook__left__sidebar {
+    top: 180px !important;
+  }
+  .facebook__header .right__box {
+    grid-column: auto;
+    margin-top: 1rem;
+  }
+  .facebook__header .facebook__nav .nav__links li {
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+  }
+  .main__content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .write__post .tools .tool__box {
+    padding: 0.5rem;
+  }
+  .write__post .tool__box > i {
+    font-size: 15px;
+  }
+  .posts__container .post__interactions .interaction {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .facebook__header .left__box .search__container {
+    flex-grow: 0.5;
+    /* border: 1px solid; */
+  }
+  .facebook__header .facebook__nav {
+    grid-column: span 12;
+    order: 3;
+    margin-top: 1rem;
+  }
+  .facebook__header .right__box {
+    order: 2;
+    margin-left: 0.5rem;
+    /* border: 1px solid blue; */
+  }
+  .facebook__header .right__box ul {
+    column-gap: 1rem;
+  }
+  .facebook__header .right__box ul li {
+    height: 50px;
+    width: 50px;
+  }
+  .facebook__header .left__box .search__container input {
+    min-width: 200px;
+  }
+
+  .facebook__right__sidebar {
+    /* grid-column: span 3; */
+    display: none;
+  }
+  .main__content {
+    grid-column: span 12;
+    height: 100dvh;
+  }
+  .main__content .main__wrapper {
+    padding: 1rem 0.5rem;
+  }
+  .facebook__header .facebook__nav #side-bar-toggler {
+    color: var(--icon__color);
+    font-size: var(--icon__font__size);
+    display: block;
+  }
+  .show__left__sidebar {
+    width: 100% !important;
+  }
+  .facebook__left__sidebar {
+    position: absolute;
+    left: 0;
+    top: 129px;
+    z-index: 200;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+  }
+}

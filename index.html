@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/Facebook_icon.svg.png"
+      type="image/x-icon"
+    />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <div class="grid">
+      <!-- Start Header   -->
+      <header class="facebook__header grid">
+        <div class="left__box">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+          />
+          <div class="search__container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Facebook" />
+          </div>
+        </div>
+        <nav class="facebook__nav">
+          <i class="fa-solid fa-bars" id="side-bar-toggler"></i>
+          <ul class="nav__links">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-user-group"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-solid fa-store"></i></li>
+            <li><i class="fa-solid fa-users"></i></li>
+          </ul>
+        </nav>
+        <div class="right__box">
+          <ul>
+            <li><i class="fa-solid fa-braille"></i></li>
+            <li><i class="fa-brands fa-facebook-messenger"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+          </ul>
+        </div>
+      </header>
+      <!-- End Header   -->
+
+      <!--  Start Left SideBar  -->
+      <aside class="facebook__left__sidebar" id="facebook-left-sidebar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-user-group"></i>
+            friends
+          </li>
+          <li>
+            <i class="fa-brands fa-youtube"></i>
+            video
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            memories
+          </li>
+          <li>
+            <i class="fa-solid fa-bookmark"></i>
+            saved
+          </li>
+          <li>
+            <i class="fa-solid fa-users"></i>
+            groups
+          </li>
+        </ul>
+      </aside>
+      <!-- End Left SideBar   -->
+
+      <!--  Start Main Content -->
+      <main class="main__content" id="main-content">
+        <div class="main__wrapper">
+          <i class="fa-solid fa-angle-right right-angle" id="right"></i>
+          <i class="fa-solid fa-angle-left left-angle" id="left"></i>
+          <div class="story__container" id="slider">
+            <div class="story__box">
+              <img
+                class="story__background"
+                src="./assets/stories/chicago-city-lights-at-night.jpg"
+              />
+              <img
+                class="user__image"
+                src="./assets/persons/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+              />
+
+              <p>Jack Wilson</p>
+            </div>
+            <div class="story__box">
+              <img
+                class="story__background"
+                src="./assets/stories/city_AlexanderSpatari_Getty-5a13972b47c26600378f0216.jpg"
+              />
+              <img
+                class="user__image"
+                src="./assets/persons/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+              />
+
+              <p>Mark Lewis</p>
+            </div>
+            <div class="story__box">
+              <img class="story__background" src="./assets/stories/gb1.jpg" />
+              <img
+                class="user__image"
+                src="./assets/persons/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
+              />
+
+              <p>Sara Kayne</p>
+            </div>
+            <div class="story__box">
+              <img
+                class="story__background"
+                src="./assets/stories/NorthBroadSt_Landscape_1_M.Edlow.jpg"
+              />
+              <img
+                class="user__image"
+                src="./assets/persons/excited-beautiful-young-woman-blue-260nw-2192558853.jpg"
+              />
+
+              <p>Linda Jacob</p>
+            </div>
+            <div class="story__box">
+              <img
+                class="story__background"
+                src="./assets/stories/pexels-ricky-esquivel-1563256.jpg"
+              />
+              <img
+                class="user__image"
+                src="./assets/persons/pexels-justin-shaifer-1222271.jpg"
+              />
+
+              <p>Justin Shaifer</p>
+            </div>
+            <div class="story__box">
+              <img
+                class="story__background"
+                src="./assets/stories/photo-1449824913935-59a10b8d2000.jpeg"
+              />
+              <img
+                src="./assets/persons/pexels-simon-robben-614810.jpg"
+                class="user__image"
+              />
+              <p>Simon Robben</p>
+            </div>
+            <div class="create__story__box">
+              <img src="./assets/persons/mypic.jpeg" />
+              <div class="create__story">
+                <div class="add__story">+</div>
+                <p>create story</p>
+              </div>
+            </div>
+          </div>
+          <div class="write__post">
+            <div class="write__post__header">
+              <img
+                src="https://cdn.vox-cdn.com/thumbor/6cH0rxEsnwY2ndipRS7IWepUw90=/0x0:3840x2160/1200x800/filters:focal(1613x773:2227x1387)/cdn.vox-cdn.com/uploads/chorus_image/image/66788456/LastofUsPart2.0.jpg"
+              />
+              <textarea
+                placeholder="What's on your mind, Ahmed?"
+                required
+                id="post"
+              ></textarea>
+            </div>
+            <div class="tools">
+              <div class="tool__box">
+                <i class="fa-solid fa-video"></i>
+                <span>live video</span>
+              </div>
+              <div class="tool__box">
+                <i class="fa-solid fa-photo-film"></i>
+                <span>photo/video</span>
+              </div>
+              <div class="tool__box">
+                <i class="fa-solid fa-face-laugh-beam"></i>
+                <span>feeling/activity</span>
+              </div>
+            </div>
+          </div>
+          <div class="posts__container" id="posts-container"></div>
+        </div>
+      </main>
+      <!-- End Main Content   -->
+
+      <!--  Start Facebook Right SideBar  -->
+      <aside class="facebook__right__sidebar">
+        <header class="right__sidebar__header">
+          <p>contacts</p>
+          <div class="right__sidebar__icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </header>
+
+        <ul class="contacts__list" id="contacts-list"></ul>
+      </aside>
+      <!--  End Facebook Right SideBar  -->
+    </div>
+    <script src="./built/index.js" type="module"></script>
+  </body>
+</html>
